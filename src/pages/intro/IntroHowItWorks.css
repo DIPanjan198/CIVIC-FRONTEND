@@ -1,0 +1,23 @@
+.how {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: #f8fafc;
+}
+
+.how h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.how-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}

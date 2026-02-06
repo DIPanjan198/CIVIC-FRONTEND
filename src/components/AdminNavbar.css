@@ -1,0 +1,107 @@
+/* ===============================
+   TOP NAVBAR
+================================ */
+
+.admin-navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 💻 MENU ICON */
+.menu-icon {
+  font-size: 22px;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* BRAND */
+.admin-brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* ===============================
+   DROPDOWN MENU
+================================ */
+
+.admin-menu {
+  position: absolute;
+  top: 58px;
+  left: 16px;
+
+  width: 240px;
+  background: #ffffff;
+
+  border-radius: 14px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+
+  z-index: 200;
+}
+
+.admin-menu.open {
+  display: flex;
+}
+
+/* LINKS */
+.admin-menu a {
+  text-decoration: none;
+  color: #111827;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.admin-menu a:hover {
+  background: #f1f5f9;
+}
+
+/* DIVIDER */
+.admin-menu hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ROLE BADGE */
+.admin-role {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+/* LOGOUT */
+.menu-logout {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-logout:hover {
+  background: #1e40af;
+}

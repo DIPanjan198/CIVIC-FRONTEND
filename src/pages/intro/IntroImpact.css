@@ -1,0 +1,21 @@
+.impact {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: white;
+}
+
+.impact h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.impact-grid h1 {
+  font-size: 48px;
+  color: #2563eb;
+}

@@ -1,0 +1,189 @@
+/* ===== PAGE ===== */
+.admin-container {
+  padding: 32px;
+  background: #f6f9fc;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.admin-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+/* ===== STATS ===== */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.admin-stat {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  font-weight: 600;
+  color: #374151;
+}
+
+.admin-stat span {
+  display: block;
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.admin-stat.total { border-left: 6px solid #6366f1; }
+.admin-stat.pending { border-left: 6px solid #f59e0b; }
+.admin-stat.progress { border-left: 6px solid #3b82f6; }
+.admin-stat.resolved { border-left: 6px solid #10b981; }
+
+/* ===== FILTER BAR ===== */
+.admin-controls {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+
+.admin-search,
+.admin-filter {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 14px;
+}
+
+.admin-search {
+  min-width: 240px;
+}
+
+/* ===== ISSUE CARD ===== */
+.admin-issue {
+  background: white;
+  border-radius: 18px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-issue:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== ISSUE HEADER ===== */
+.admin-issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.admin-issue-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===== STATUS BADGE ===== */
+.admin-status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.admin-status.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.admin-status.in-progress {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.admin-status.resolved {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+/* ===== ISSUE META ===== */
+.admin-issue-meta {
+  margin-top: 10px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.admin-issue-meta b {
+  color: #111827;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.admin-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.admin-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-btn.pending {
+  background: #f59e0b;
+  color: white;
+}
+
+.admin-btn.progress {
+  background: #3b82f6;
+  color: white;
+}
+
+.admin-btn.resolved {
+  background: #10b981;
+  color: white;
+}
+
+.admin-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* ===== ADMIN NOTE ===== */
+.admin-note {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .admin-issue-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .admin-actions {
+    flex-wrap: wrap;
+  }
+}

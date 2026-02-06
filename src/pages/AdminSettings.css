@@ -1,0 +1,138 @@
+/* PAGE */
+.settings-page {
+  padding: 40px;
+  background: #f6f9fc;
+  min-height: 100vh;
+  animation: fadeIn 0.4s ease;
+}
+
+/* HEADER */
+.settings-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.settings-header p {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.settings-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px 26px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+/* LABEL */
+.settings-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* VALUE */
+.settings-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-badge.online {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #e5e7eb;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.switch input:checked + .slider {
+  background: #2563eb;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* FOOTER NOTE */
+.settings-note {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .settings-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
