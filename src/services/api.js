@@ -3,7 +3,7 @@ import axios from "axios";
 const api = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://civic-connect-api.onrender.com/api"
+      ? "https://civic-backend-00ge.onrender.com/api"
       : "http://localhost:5000/api",
 });
 
